@@ -1,0 +1,77 @@
+{
+  "@context": "https://schema.org",
+  "@type": "HowTo",
+  "@id": "https://example.com/how-to/slug#howto",
+  "name": "How to do the concrete task described by this article",
+  "description": "One-sentence summary of what the reader will accomplish by the end.",
+  "url": "https://example.com/how-to/slug",
+  "datePublished": "2026-04-01",
+  "dateModified": "2026-04-21",
+  "inLanguage": "en",
+  "totalTime": "PT15M",
+  "estimatedCost": {
+    "@type": "MonetaryAmount",
+    "currency": "EUR",
+    "value": "0"
+  },
+  "supply": [
+    {
+      "@type": "HowToSupply",
+      "name": "Input or prerequisite one"
+    },
+    {
+      "@type": "HowToSupply",
+      "name": "Input or prerequisite two"
+    }
+  ],
+  "tool": [
+    {
+      "@type": "HowToTool",
+      "name": "Tool one (with version if applicable)"
+    },
+    {
+      "@type": "HowToTool",
+      "name": "Tool two (with version if applicable)"
+    }
+  ],
+  "step": [
+    {
+      "@type": "HowToStep",
+      "position": 1,
+      "name": "First concrete step",
+      "text": "Full text of step one. Describe what to do and what the expected result looks like.",
+      "url": "https://example.com/how-to/slug#step-1",
+      "image": "https://example.com/assets/howto/step-1.png"
+    },
+    {
+      "@type": "HowToStep",
+      "position": 2,
+      "name": "Second concrete step",
+      "text": "Full text of step two.",
+      "url": "https://example.com/how-to/slug#step-2"
+    },
+    {
+      "@type": "HowToStep",
+      "position": 3,
+      "name": "Third concrete step",
+      "text": "Full text of step three.",
+      "url": "https://example.com/how-to/slug#step-3"
+    },
+    {
+      "@type": "HowToStep",
+      "position": 4,
+      "name": "Verify and finish",
+      "text": "How to verify the result. What success looks like.",
+      "url": "https://example.com/how-to/slug#step-4"
+    }
+  ],
+  "author": {
+    "@type": "Person",
+    "name": "Jane Doe",
+    "url": "https://example.com/team/jane-doe"
+  },
+  "publisher": {
+    "@type": "Organization",
+    "@id": "https://example.com/#organization"
+  }
+}

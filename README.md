@@ -1,44 +1,62 @@
-# geo-schema
+# geo-schema — JSON-LD for AI Crawlers
 
-> **JSON-LD & Schema.org templates optimized for AI crawlers (ChatGPT, Perplexity, Gemini, Claude).**
+> **Copy-paste Schema.org JSON-LD snippets optimized for how ChatGPT, Perplexity, Claude and Gemini read pages.**
 
-Part of [AuraCite](https://auracite.de) — the operating system for Generative Engine Optimization (GEO).
+Part of [AuraCite](https://auracite.de) — an analytics platform for Generative Engine Optimization.
 
-## Why Schema.org for GEO?
+[![License: MIT](https://img.shields.io/badge/License-MIT-blue.svg)](LICENSE)
 
-LLMs rely heavily on structured data to understand entities, relationships, and facts. Unlike traditional SEO where schema is a "nice-to-have", **for GEO it is critical**: AI engines index entity graphs, not just pages.
+## Why Schema.org matters for GEO
 
-## What's inside
+LLMs rely heavily on structured data to resolve entities, relationships and facts. In traditional SEO, schema is a "nice to have"; for GEO it is close to mandatory: AI engines index entity graphs, not just pages, and JSON-LD is the cleanest signal you can send.
 
-| Schema | Use case |
-|--------|----------|
-| `SoftwareApplication.jsonld` | SaaS products & apps |
-| `FAQPage.jsonld` | Question/answer blocks (huge GEO signal) |
-| `TechArticle.jsonld` | Technical blog posts |
-| `Organization.jsonld` | Company entity (founders, address, contact) |
-| `Product.jsonld` | E-commerce (reviews, ratings, price) |
-| `HowTo.jsonld` | Step-by-step guides |
+## What is inside
 
-> Coming soon. Star the repo to get notified.
+| File | Use case |
+| --- | --- |
+| [`SoftwareApplication.jsonld`](SoftwareApplication.jsonld) | SaaS products and apps |
+| [`Organization.jsonld`](Organization.jsonld) | Company entity (founders, contacts, sameAs) |
+| [`FAQPage.jsonld`](FAQPage.jsonld) | Q and A blocks (high GEO signal) |
+| [`TechArticle.jsonld`](TechArticle.jsonld) | Technical blog posts |
+| [`HowTo.jsonld`](HowTo.jsonld) | Step-by-step guides |
+| [`Product.jsonld`](Product.jsonld) | E-commerce products with reviews and price |
 
-## Installation
+Every file is a fully-filled example using a placeholder brand (`ExampleBrand`) so you can see exactly what valid output looks like. Replace the placeholder values with your own.
 
-```bash
-npm install @getauracite/geo-schema
-```
+## How to use
 
-Or copy the JSON-LD blocks directly into your HTML `<head>`.
+1. Pick the file that matches your page type
+2. Replace every `"ExampleBrand"` / `"https://example.com/..."` value with your real data
+3. Drop the JSON into a `<script type="application/ld+json">` tag in your `<head>`
+4. Validate with [Google Rich Results Test](https://search.google.com/test/rich-results) or [schema.org Validator](https://validator.schema.org/)
+5. Verify the page renders the JSON **without JavaScript execution** (AI crawlers often skip JS)
+
+## Tips specific to GEO
+
+- **Always set `sameAs`** on `Organization` — link to LinkedIn, GitHub, Crunchbase, Wikidata. LLMs use this to resolve your entity.
+- **Keep `FAQPage` answers short and factual.** LLMs quote them nearly verbatim.
+- **Use `TechArticle` instead of `Article`** for developer content. It is a stronger signal for Claude and Perplexity.
+- **Fill `aggregateRating` on `Product` and `SoftwareApplication`** only when you actually have ratings. Fake ratings are detected and downranked.
+- **For multi-brand pages, nest `Organization` inside `isPartOf`** rather than duplicating entities.
+
+## Contributing
+
+PRs welcome. Please:
+
+1. Keep each file as a single valid JSON-LD object (not an array) so it is copy-pasteable
+2. Use `https://schema.org` (https, canonical) as `@context`
+3. Validate against [validator.schema.org](https://validator.schema.org/) before submitting
+4. No marketing fluff in property values
 
 ## License
 
-MIT License — free for commercial use.
+MIT — use these templates freely for any project, commercial or open-source.
 
-## Contact
+## About AuraCite
 
-- Website: https://auracite.de
-- Email: g@auracite.de
-- Twitter: [@AuraCite](https://twitter.com/AuraCite)
+- Website: [auracite.de](https://auracite.de)
+- Contact: <g@auracite.de>
 
 ---
 
-⭐ **Star this repo** to get notified when schemas are published.
+**Star this repo** if it saved you a trip to schema.org docs.

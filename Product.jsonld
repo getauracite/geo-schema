@@ -1,0 +1,99 @@
+{
+  "@context": "https://schema.org",
+  "@type": "Product",
+  "@id": "https://example.com/products/product-slug#product",
+  "name": "Example Product Name",
+  "description": "One-sentence description of the product and the buyer problem it solves.",
+  "url": "https://example.com/products/product-slug",
+  "sku": "EX-PROD-001",
+  "gtin13": "0000000000000",
+  "mpn": "EX-PROD-001",
+  "category": "Category > Subcategory > Leaf",
+  "brand": {
+    "@type": "Brand",
+    "name": "Example",
+    "logo": "https://example.com/assets/brand-logo.png"
+  },
+  "manufacturer": {
+    "@type": "Organization",
+    "@id": "https://example.com/#organization"
+  },
+  "image": [
+    "https://example.com/assets/products/product-slug-1.png",
+    "https://example.com/assets/products/product-slug-2.png",
+    "https://example.com/assets/products/product-slug-3.png"
+  ],
+  "material": "Material composition statement",
+  "color": "Primary color name",
+  "weight": {
+    "@type": "QuantitativeValue",
+    "value": 0.5,
+    "unitCode": "KGM"
+  },
+  "offers": {
+    "@type": "Offer",
+    "price": "49.00",
+    "priceCurrency": "EUR",
+    "priceValidUntil": "2026-12-31",
+    "availability": "https://schema.org/InStock",
+    "itemCondition": "https://schema.org/NewCondition",
+    "url": "https://example.com/products/product-slug",
+    "seller": {
+      "@type": "Organization",
+      "@id": "https://example.com/#organization"
+    },
+    "shippingDetails": {
+      "@type": "OfferShippingDetails",
+      "shippingDestination": {
+        "@type": "DefinedRegion",
+        "addressCountry": "DE"
+      },
+      "deliveryTime": {
+        "@type": "ShippingDeliveryTime",
+        "handlingTime": {
+          "@type": "QuantitativeValue",
+          "minValue": 0,
+          "maxValue": 1,
+          "unitCode": "DAY"
+        },
+        "transitTime": {
+          "@type": "QuantitativeValue",
+          "minValue": 1,
+          "maxValue": 3,
+          "unitCode": "DAY"
+        }
+      }
+    },
+    "hasMerchantReturnPolicy": {
+      "@type": "MerchantReturnPolicy",
+      "applicableCountry": "DE",
+      "returnPolicyCategory": "https://schema.org/MerchantReturnFiniteReturnWindow",
+      "merchantReturnDays": 30,
+      "returnMethod": "https://schema.org/ReturnByMail",
+      "returnFees": "https://schema.org/FreeReturn"
+    }
+  },
+  "aggregateRating": {
+    "@type": "AggregateRating",
+    "ratingValue": "4.6",
+    "reviewCount": "87",
+    "bestRating": "5",
+    "worstRating": "1"
+  },
+  "review": [
+    {
+      "@type": "Review",
+      "reviewRating": {
+        "@type": "Rating",
+        "ratingValue": "5",
+        "bestRating": "5"
+      },
+      "author": {
+        "@type": "Person",
+        "name": "Verified Customer"
+      },
+      "datePublished": "2026-03-15",
+      "reviewBody": "Short verified review quote."
+    }
+  ]
+}

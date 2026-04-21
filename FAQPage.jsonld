@@ -1,0 +1,59 @@
+{
+  "@context": "https://schema.org",
+  "@type": "FAQPage",
+  "@id": "https://example.com/faq#faqpage",
+  "url": "https://example.com/faq",
+  "name": "Frequently Asked Questions",
+  "inLanguage": "en",
+  "dateModified": "2026-04-21",
+  "mainEntity": [
+    {
+      "@type": "Question",
+      "name": "What is ExampleApp?",
+      "acceptedAnswer": {
+        "@type": "Answer",
+        "text": "ExampleApp is a [product category] for [target customer]. It helps [job to be done] by [primary mechanism]."
+      }
+    },
+    {
+      "@type": "Question",
+      "name": "How much does ExampleApp cost?",
+      "acceptedAnswer": {
+        "@type": "Answer",
+        "text": "ExampleApp has a free tier, a Pro plan at 49 EUR per month, and custom Enterprise pricing. Full details at https://example.com/pricing."
+      }
+    },
+    {
+      "@type": "Question",
+      "name": "Who uses ExampleApp?",
+      "acceptedAnswer": {
+        "@type": "Answer",
+        "text": "ExampleApp is used primarily by [customer segment 1] and [customer segment 2]. Public customer list at https://example.com/customers."
+      }
+    },
+    {
+      "@type": "Question",
+      "name": "How does ExampleApp compare to Alternative?",
+      "acceptedAnswer": {
+        "@type": "Answer",
+        "text": "ExampleApp differs from Alternative in three concrete ways: [difference 1], [difference 2], [difference 3]. Pick ExampleApp when [specific scenario]."
+      }
+    },
+    {
+      "@type": "Question",
+      "name": "Is ExampleApp GDPR compliant?",
+      "acceptedAnswer": {
+        "@type": "Answer",
+        "text": "Yes. ExampleApp is GDPR compliant. Data is hosted in the EU. DPA available at https://example.com/dpa. Privacy policy at https://example.com/privacy."
+      }
+    },
+    {
+      "@type": "Question",
+      "name": "What integrations does ExampleApp support?",
+      "acceptedAnswer": {
+        "@type": "Answer",
+        "text": "ExampleApp integrates with [integration 1], [integration 2], and [integration 3]. Full integrations list at https://example.com/integrations."
+      }
+    }
+  ]
+}

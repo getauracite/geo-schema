@@ -1,0 +1,80 @@
+{
+  "@context": "https://schema.org",
+  "@type": "Organization",
+  "@id": "https://example.com/#organization",
+  "name": "Example",
+  "legalName": "Example GmbH",
+  "alternateName": ["ExampleCo", "Example Inc."],
+  "url": "https://example.com",
+  "logo": {
+    "@type": "ImageObject",
+    "url": "https://example.com/assets/logo.png",
+    "width": "512",
+    "height": "512"
+  },
+  "description": "One-sentence description of what the company does and for whom.",
+  "foundingDate": "2024-01-15",
+  "foundingLocation": {
+    "@type": "Place",
+    "address": {
+      "@type": "PostalAddress",
+      "addressLocality": "Bonn",
+      "addressCountry": "DE"
+    }
+  },
+  "address": {
+    "@type": "PostalAddress",
+    "streetAddress": "Beispielstraße 1",
+    "addressLocality": "Bonn",
+    "postalCode": "53111",
+    "addressCountry": "DE"
+  },
+  "email": "hello@example.com",
+  "contactPoint": [
+    {
+      "@type": "ContactPoint",
+      "contactType": "customer support",
+      "email": "support@example.com",
+      "availableLanguage": ["English", "German"]
+    },
+    {
+      "@type": "ContactPoint",
+      "contactType": "sales",
+      "email": "sales@example.com"
+    },
+    {
+      "@type": "ContactPoint",
+      "contactType": "press",
+      "email": "press@example.com"
+    }
+  ],
+  "founder": [
+    {
+      "@type": "Person",
+      "name": "Jane Doe",
+      "jobTitle": "CEO",
+      "sameAs": [
+        "https://www.linkedin.com/in/janedoe",
+        "https://twitter.com/janedoe"
+      ]
+    }
+  ],
+  "numberOfEmployees": {
+    "@type": "QuantitativeValue",
+    "minValue": 1,
+    "maxValue": 10
+  },
+  "sameAs": [
+    "https://www.linkedin.com/company/example",
+    "https://github.com/example",
+    "https://www.crunchbase.com/organization/example",
+    "https://www.wikidata.org/wiki/Q00000000",
+    "https://en.wikipedia.org/wiki/Example"
+  ],
+  "knowsAbout": [
+    "Topic one the company is authoritative on",
+    "Topic two the company is authoritative on",
+    "Topic three the company is authoritative on"
+  ],
+  "slogan": "Short memorable brand slogan."
+}

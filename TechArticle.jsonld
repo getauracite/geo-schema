@@ -1,0 +1,65 @@
+{
+  "@context": "https://schema.org",
+  "@type": "TechArticle",
+  "@id": "https://example.com/blog/article-slug#article",
+  "headline": "Concrete article title under 110 characters",
+  "alternativeHeadline": "Optional subheadline with additional context",
+  "description": "One-sentence description of the article content and who it is for.",
+  "url": "https://example.com/blog/article-slug",
+  "datePublished": "2026-04-01",
+  "dateModified": "2026-04-21",
+  "inLanguage": "en",
+  "articleSection": "Engineering",
+  "wordCount": 1850,
+  "keywords": [
+    "primary keyword",
+    "secondary keyword",
+    "long tail keyword"
+  ],
+  "author": {
+    "@type": "Person",
+    "name": "Jane Doe",
+    "url": "https://example.com/team/jane-doe",
+    "jobTitle": "Senior Engineer",
+    "sameAs": [
+      "https://www.linkedin.com/in/janedoe",
+      "https://github.com/janedoe",
+      "https://twitter.com/janedoe"
+    ]
+  },
+  "publisher": {
+    "@type": "Organization",
+    "@id": "https://example.com/#organization"
+  },
+  "mainEntityOfPage": {
+    "@type": "WebPage",
+    "@id": "https://example.com/blog/article-slug"
+  },
+  "image": {
+    "@type": "ImageObject",
+    "url": "https://example.com/assets/blog/article-slug-og.png",
+    "width": "1200",
+    "height": "630"
+  },
+  "proficiencyLevel": "Expert",
+  "dependencies": "Node.js 20+, Docker 24+, PostgreSQL 16+",
+  "about": [
+    {
+      "@type": "Thing",
+      "name": "Main concept covered in article"
+    },
+    {
+      "@type": "Thing",
+      "name": "Secondary concept covered"
+    }
+  ],
+  "citation": [
+    {
+      "@type": "CreativeWork",
+      "name": "Referenced paper or article",
+      "url": "https://example.org/referenced-work"
+    }
+  ],
+  "isBasedOn": "https://example.org/prior-art",
+  "license": "https://creativecommons.org/licenses/by/4.0/"
+}
