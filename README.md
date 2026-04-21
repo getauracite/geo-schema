@@ -36,7 +36,7 @@ MIT License — free for commercial use.
 ## Contact
 
 - Website: https://auracite.de
-- Email: hello@auracite.de
+- Email: g@auracite.de
 - Twitter: [@AuraCite](https://twitter.com/AuraCite)
 
 ---
